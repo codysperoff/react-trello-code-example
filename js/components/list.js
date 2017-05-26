@@ -5,6 +5,8 @@ import Card from './card';
 export default function CardList(props) {
     console.log(props);
     console.log(props.cards);
+    console.log(props.submitHandler);
+    console.log(props.changeHandler);
     const list = props.cards.map((card, index) =>
                                  <li key={index}>
                                  <Card text={card} />
